@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Connexion</title>
+    </head>
+    <body class="flex justify-center items-start mt-16 mx-2 gap-8">
+        <div
+            class="bg-[url(https://imgs.search.brave.com/h7gLn9F9S0eH07jEw1ZORdwoOH0_WKgRkVGSm15wGYo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXZv/bHV0aW9uZmVybWVu/dGF0aW9uLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMi8x/MC9wbGF0LWNob3Vj/cm91dGUtYWxzYWNp/ZW5uZS1nYXJuaWUt/dmlhbmRlLTgwMHg2/MTMtMS5qcGc)] bg-cover bg-center absolute top-0 blur-lg w-full h-full"
+        ></div>
+        <form
+            action="#"
+            id="connectForm"
+            class="flex flex-col gap-4 border rounded-lg p-4 z-10 bg-white"
+        >
+            <h1
+                class="text-center font-bold text-2xl underline decoration-teal-500"
+            >
+                Connexion
+            </h1>
+            <div class="flex gap-2">
+                <label for="email">Identifiant : </label>
+                <input
+                    type="text"
+                    id="email"
+                    class="border rounded bg-gray-100 flex-grow"
+                />
+            </div>
+            <div class="flex gap-2">
+                <label for="password">Mot de passe : </label>
+                <input
+                    type="password"
+                    id="password"
+                    class="border rounded bg-gray-100 flex-grow"
+                />
+            </div>
+            <button id="connectBtn" class="bg-teal-500 text-white rounded p-1">
+                Se connecter
+            </button>
+        </form>
+        <script src="dist/connect.js"></script>
+    </body>
+</html>
